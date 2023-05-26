@@ -20,10 +20,10 @@ namespace MySqlWebApp.Data
             {
                 users[i] = new User
                 {
-                    FirstName = Faker.Name.First(),
-                    LastName = Faker.Name.Last(),
-                    Email = Faker.Internet.Email(),
-                    Role = Faker.RandomNumber.Next(0, 10) > 7 ? Role.Admin : Role.User
+                    FirstName = Name.First(),
+                    LastName = Name.Last(),
+                    Email = Internet.Email(),
+                    Role = RandomNumber.Next(0, 10) > 7 ? Role.Admin : Role.User
                 };
             }
 
