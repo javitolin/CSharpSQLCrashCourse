@@ -14,4 +14,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MySqlWebApp.DataAccess\MySqlWebApp.DataAccess.csproj" />
+    <ProjectReference Include="..\MySqlWebApp.Entities\MySqlWebApp.Entities.csproj" />
+    <ProjectReference Include="..\MySqlWebApp.Services\MySqlWebApp.Services.csproj" />
+  </ItemGroup>
+
 </Project>

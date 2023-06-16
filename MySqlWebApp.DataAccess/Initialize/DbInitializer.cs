@@ -1,8 +1,7 @@
-﻿using MySqlWebApp.DataAccess;
+﻿using Faker;
 using MySqlWebApp.Entities;
-using Faker;
 
-namespace MySqlWebApp.Data
+namespace MySqlWebApp.DataAccess.Initialize
 {
     public static class DbInitializer
     {

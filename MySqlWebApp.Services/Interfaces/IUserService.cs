@@ -1,7 +1,7 @@
 ﻿using MySqlWebApp.Entities;
-using MySqlWebApp.Requests.User;
+using MySqlWebApp.Entities.Requests.User;
 
-namespace MySqlWebApp.Services
+namespace MySqlWebApp.Services.Interfaces
 {
     public interface IUserService
     {

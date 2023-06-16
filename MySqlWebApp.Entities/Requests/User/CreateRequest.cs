@@ -1,24 +1,23 @@
-﻿using MySqlWebApp.Entities;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace MySqlWebApp.Requests.User
+namespace MySqlWebApp.Entities.Requests.User
 {
     public class CreateRequest
     {
 
         [Required]
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = string.Empty;
 
         [Required]
-        public string LastName { get; set; }
+        public string LastName { get; set; } = string.Empty;
 
         [Required]
         [EnumDataType(typeof(Role))]
-        public string Role { get; set; }
+        public string Role { get; set; } = string.Empty;
 
         [Required]
         [EmailAddress]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
         /*
         [Required]

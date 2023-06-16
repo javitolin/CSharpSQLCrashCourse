@@ -18,6 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MySqlWebApp.DataAccess\MySqlWebApp.DataAccess.csproj" />
+    <ProjectReference Include="..\MySqlWebApp.Entities\MySqlWebApp.Entities.csproj" />
+    <ProjectReference Include="..\MySqlWebApp.Services\MySqlWebApp.Services.csproj" />
     <ProjectReference Include="..\MySqlWebApp\MySqlWebApp.csproj" />
   </ItemGroup>
 

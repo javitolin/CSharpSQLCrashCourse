@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MySqlWebApp.Entities;
-using MySqlWebApp.Requests.User;
-using MySqlWebApp.Services;
+using MySqlWebApp.Entities.Requests.User;
+using MySqlWebApp.Services.Interfaces;
 
 namespace MySqlWebApp.Controllers
 {

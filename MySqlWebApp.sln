@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlWebApp", "MySqlWebApp\MySqlWebApp.csproj", "{0EBC384C-98EA-456D-BA98-835A139AB94A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySqlWebApp", "MySqlWebApp\MySqlWebApp.csproj", "{0EBC384C-98EA-456D-BA98-835A139AB94A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlWebAppTests", "MySqlWebAppTests\MySqlWebAppTests.csproj", "{91DE907D-A91A-4F6F-8FB9-3AB7C945F491}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySqlWebAppTests", "MySqlWebAppTests\MySqlWebAppTests.csproj", "{91DE907D-A91A-4F6F-8FB9-3AB7C945F491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlWebApp.DataAccess", "MySqlWebApp.DataAccess\MySqlWebApp.DataAccess.csproj", "{D9F2C537-8FCD-4B68-BA32-7F170374745A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlWebApp.Entities", "MySqlWebApp.Entities\MySqlWebApp.Entities.csproj", "{FA6EABAC-677B-4539-8714-319216130006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlWebApp.Services", "MySqlWebApp.Services\MySqlWebApp.Services.csproj", "{913B8E40-241C-4A10-A856-DED6D6918B0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{91DE907D-A91A-4F6F-8FB9-3AB7C945F491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91DE907D-A91A-4F6F-8FB9-3AB7C945F491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91DE907D-A91A-4F6F-8FB9-3AB7C945F491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F2C537-8FCD-4B68-BA32-7F170374745A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F2C537-8FCD-4B68-BA32-7F170374745A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F2C537-8FCD-4B68-BA32-7F170374745A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F2C537-8FCD-4B68-BA32-7F170374745A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6EABAC-677B-4539-8714-319216130006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6EABAC-677B-4539-8714-319216130006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6EABAC-677B-4539-8714-319216130006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6EABAC-677B-4539-8714-319216130006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913B8E40-241C-4A10-A856-DED6D6918B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913B8E40-241C-4A10-A856-DED6D6918B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913B8E40-241C-4A10-A856-DED6D6918B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913B8E40-241C-4A10-A856-DED6D6918B0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

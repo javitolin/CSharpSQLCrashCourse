@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MySqlWebApp.Data;
 using MySqlWebApp.DataAccess;
+using MySqlWebApp.DataAccess.Initialize;
 using MySqlWebApp.Entities;
-using MySqlWebApp.Requests.User;
+using MySqlWebApp.Entities.Requests.User;
 
 namespace MySqlWebApp.Services.Tests
 {
@@ -13,6 +13,7 @@ namespace MySqlWebApp.Services.Tests
         [TestMethod()]
         public void AddNewUser_CorrectUser_UserExists()
         {
+            // Arrange
             var options = new DbContextOptionsBuilder<DataContext>()
                         .UseInMemoryDatabase(databaseName: "UsersDatabase")
                         .Options;
@@ -22,6 +23,7 @@ namespace MySqlWebApp.Services.Tests
                 DbInitializer.Initialize(context);
             }
 
+            // Act
             using (var context = new DataContext(options))
             {
                 UserService userService = new UserService(context);
@@ -37,6 +39,7 @@ namespace MySqlWebApp.Services.Tests
                         Email = email }
                     );
 
+                // Assert
                 Assert.IsNotNull(createdUser);
 
                 var user = userService.GetById(createdUser.Id);

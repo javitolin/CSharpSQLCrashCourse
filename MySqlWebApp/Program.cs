@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using MySqlWebApp.Data;
 using MySqlWebApp.DataAccess;
-using MySqlWebApp.Entities;
+using MySqlWebApp.DataAccess.Initialize;
 using MySqlWebApp.Services;
+using MySqlWebApp.Services.Interfaces;
 using System.Text.Json.Serialization;
 
 namespace MySqlWebApp
@@ -18,7 +18,6 @@ namespace MySqlWebApp
             var connectionString = builder.Configuration.GetConnectionString("WebApiDatabase");
             builder.Services.AddDbContext<DataContext>(options =>
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
-
 
             builder.Services.AddControllers().AddJsonOptions(x =>
             {

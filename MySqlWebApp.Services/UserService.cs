@@ -1,6 +1,7 @@
 ﻿using MySqlWebApp.DataAccess;
 using MySqlWebApp.Entities;
-using MySqlWebApp.Requests.User;
+using MySqlWebApp.Entities.Requests.User;
+using MySqlWebApp.Services.Interfaces;
 
 // For password:
 // using BCrypt.Net;

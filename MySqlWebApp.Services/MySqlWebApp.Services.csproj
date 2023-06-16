@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MySqlWebApp.DataAccess\MySqlWebApp.DataAccess.csproj" />
+    <ProjectReference Include="..\MySqlWebApp.Entities\MySqlWebApp.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
